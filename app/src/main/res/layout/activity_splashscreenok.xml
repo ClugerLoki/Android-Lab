@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash3"
+    tools:context=".Splashscreenok">
+
+    <ImageView
+        android:id="@+id/appsplash"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="405dp"
+        android:layout_marginEnd="88dp"
+
+        android:layout_marginRight="88dp"
+        android:src="@drawable/splash_icon" />
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:text="Bit Fit"
+        android:textColor="#FFF"
+        android:fontFamily="serif-monospace"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+</RelativeLayout>
