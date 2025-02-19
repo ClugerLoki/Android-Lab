@@ -40,7 +40,7 @@
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:onClick="beforeage18"
+                    android:onClick="helth"
                     android:layout_width="fill_parent"
                     android:layout_height="150dp"
                     android:layout_gravity="center"
@@ -58,7 +58,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="monospace"
                             android:padding="5dp"
-                            android:text="Before Age 18"
+                            android:text="Yoga for Health"
                             android:textColor="#ff000000"
                             android:textSize="20dp"
                             android:textStyle="bold" />
@@ -128,7 +128,7 @@
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:onClick="afterage18"
+                    android:onClick="fitness"
                     android:layout_width="fill_parent"
                     android:layout_height="150dp"
                     android:layout_gravity="center"
@@ -146,7 +146,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="monospace"
                             android:padding="5dp"
-                            android:text="After Age 18"
+                            android:text="Yoga for Fitness"
                             android:textColor="#ff000000"
                             android:textSize="20dp"
                             android:textStyle="bold" />
@@ -208,15 +208,15 @@
             </LinearLayout>
 
             <LinearLayout
-                android:onClick="food"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:layout_marginTop="15.0dp"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/backgroundcrop"
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:onClick="concentrtion"
                     android:layout_width="fill_parent"
                     android:layout_height="150dp"
                     android:layout_gravity="center"
@@ -234,10 +234,101 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="monospace"
                             android:padding="5dp"
-                            android:text="Edit your Name"
+                            android:text="Yoga for Concentration"
                             android:textColor="#ff000000"
                             android:textSize="20dp"
                             android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:padding="5dp"
+                            android:text="Day 60"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Everyday 15 min"
+                            android:textColor="#ffff5722"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:src="@drawable/baseline_arrow_forward_ios_24" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonOpenTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/btn"
+                    android:text="Get Started"
+                    android:textAllCaps="true"
+                    android:textColor="#FFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backgroundcrop"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:onClick="concentrtion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="monospace"
+                            android:padding="5dp"
+                            android:text="Everyday Yoga Notification"
+                            android:textColor="#ff000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+
 
 
                     </LinearLayout>
@@ -245,17 +336,35 @@
                     <LinearLayout
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="2" />
+                        android:layout_weight="2">
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:src="@drawable/baseline_arrow_forward_ios_24" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
                 <Button
-                    android:id="@+id/buttonOpenTextStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:id="@+id/yoganotification"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@drawable/btn"
-                    android:text="Get Started"
+                    android:text="Set Notification"
                     android:textAllCaps="true"
                     android:textColor="#FFF" />
 

@@ -16,7 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button1, button2, buttonOpenTextStyle;
+    Button button1, button2, buttonOpenTextStyle, btnOpenScheduler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+                Intent intent = new Intent(MainActivity.this,SecondActivity2.class);
                 startActivity(intent);
             }
         });
@@ -56,24 +56,34 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnOpenScheduler = findViewById(R.id.yoganotification); // Change to your actual button ID
+
+        btnOpenScheduler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, NotificationSchedulerActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 
     //private void setSupportActionBar(Toolbar toolbar) {
     //}
 
-    public void beforeage18(View view){
+    public void helth(View view){
         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
         startActivity(intent);
     }
 
-    public void afterage18(View view){
+    public void fitness(View view){
         Intent intent = new Intent(MainActivity.this, SecondActivity2.class);
         startActivity(intent);
     }
 
-    public void food(View view){
-        Intent intent = new Intent(MainActivity.this, FoodActivity.class);
+    public void concentrtion(View view){
+        Intent intent = new Intent(MainActivity.this, TextStyleActivity.class);
         startActivity(intent);
     }
 
