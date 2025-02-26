@@ -31,6 +31,9 @@
         <activity
             android:name=".TextStyleActivity"
             android:exported="false" />
+        <activity
+            android:name=".BMIActivity"
+            android:exported="false" />
 
         <activity
             android:name=".LoginActivity"
