@@ -96,6 +96,16 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void notification(View view){
+        Intent intent = new Intent(MainActivity.this, NotificationSchedulerActivity.class);
+        startActivity(intent);
+    }
+
+    public void bmi(View view){
+        Intent intent = new Intent(MainActivity.this, BMIActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     public void onBackPressed() {
         super.onBackPressed();
