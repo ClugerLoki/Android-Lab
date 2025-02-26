@@ -34,6 +34,9 @@
         <activity
             android:name=".BMIActivity"
             android:exported="false" />
+        <activity
+            android:name=".CalorieActivity"
+            android:exported="false" />
 
         <activity
             android:name=".LoginActivity"

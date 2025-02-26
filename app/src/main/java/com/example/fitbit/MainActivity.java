@@ -16,7 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button1, button2, buttonOpenTextStyle, btnOpenScheduler, openBMICalculator;
+    Button button1, button2, buttonOpenTextStyle, btnOpenScheduler, openBMICalculator, openCalorieCalculator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         button2 = findViewById(R.id.startyoga2);
         buttonOpenTextStyle = findViewById(R.id.buttonOpenTextStyle);
         openBMICalculator = findViewById(R.id.buttonBMI);
+        openCalorieCalculator = findViewById(R.id.buttonCalorie);
 
 
         button1.setOnClickListener(new View.OnClickListener() {
@@ -75,6 +76,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        openCalorieCalculator.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CalorieActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 
@@ -103,6 +112,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void bmi(View view){
         Intent intent = new Intent(MainActivity.this, BMIActivity.class);
+        startActivity(intent);
+    }
+    public void calorie(View view){
+        Intent intent = new Intent(MainActivity.this, CalorieActivity.class);
         startActivity(intent);
     }
 
