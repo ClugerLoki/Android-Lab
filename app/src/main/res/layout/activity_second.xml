@@ -7,17 +7,18 @@
     android:background="#FFF"
     android:orientation="vertical"
     tools:context=".SecondActivity">
-    
-    
-    <Toolbar
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/cardview_dark_background"
         android:textAlignment="textEnd"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:title="BitFit"
-        android:titleTextColor="#FFF"
-        />
+        app:title="BIT Fit"
+        app:titleTextColor="#FFF" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,7 +51,7 @@
                     >
                     <LinearLayout
                         android:onClick="Imagebuttonclicked"
-
+                        android:id="@+id/tadasana"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10.0dp"
@@ -158,7 +159,7 @@
                     >
                     <LinearLayout
                         android:onClick="Imagebuttonclicked"
-
+                        android:id="@+id/Vrikshasana"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10.0dp"
@@ -266,7 +267,7 @@
                     >
                     <LinearLayout
                         android:onClick="Imagebuttonclicked"
-
+                        android:id="@+id/Vajrasana"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10.0dp"
@@ -374,7 +375,7 @@
                     >
                     <LinearLayout
                         android:onClick="Imagebuttonclicked"
-
+                        android:id="@+id/Uttanapapadasana"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10.0dp"
@@ -482,7 +483,7 @@
                     >
                     <LinearLayout
                         android:onClick="Imagebuttonclicked"
-
+                        android:id="@+id/Pawanamuktasana"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10.0dp"
@@ -590,7 +591,7 @@
                     >
                     <LinearLayout
                         android:onClick="Imagebuttonclicked"
-
+                        android:id="@+id/Kapalabharti"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10.0dp"
@@ -698,7 +699,7 @@
                     >
                     <LinearLayout
                         android:onClick="Imagebuttonclicked"
-
+                        android:id="@+id/AnulomaViloma"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10.0dp"

@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         openBMICalculator.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, BMIActivity.class);
+                Intent intent = new Intent(MainActivity.this, CalorieCalculatorActivity.class);
                 startActivity(intent);
             }
         });
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void bmi(View view){
-        Intent intent = new Intent(MainActivity.this, BMIActivity.class);
+        Intent intent = new Intent(MainActivity.this, CalorieCalculatorActivity.class);
         startActivity(intent);
     }
     public void calorie(View view){

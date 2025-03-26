@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:allowBackup="true"
@@ -15,7 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FitBit"
         tools:targetApi="31">
-
+        <activity
+            android:name=".ThirdActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />
@@ -32,12 +34,14 @@
             android:name=".TextStyleActivity"
             android:exported="false" />
         <activity
+            android:name=".CalorieCalculatorActivity"
+            android:exported="false" />
+        <activity
             android:name=".BMIActivity"
             android:exported="false" />
         <activity
             android:name=".CalorieActivity"
             android:exported="false" />
-
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
@@ -49,10 +53,13 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <receiver android:name=".NotificationReceiver" android:exported="false"/>
-        <activity android:name=".NotificationSchedulerActivity"/>
+
+        <receiver
+            android:name=".NotificationReceiver"
+            android:exported="false" />
+
+        <activity android:name=".NotificationSchedulerActivity" />
     </application>
 
 </manifest>
