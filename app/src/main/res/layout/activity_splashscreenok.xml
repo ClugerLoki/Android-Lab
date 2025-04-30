@@ -23,7 +23,7 @@
         android:layout_marginEnd="88dp"
 
         android:layout_marginRight="88dp"
-        android:src="@drawable/splash_icon" />
+        android:src="@drawable/final_logo" />
 
     <TextView
         android:id="@+id/appname"
@@ -33,7 +33,7 @@
         android:layout_marginBottom="35dp"
         android:text="Bit Fit"
         android:textColor="#FFF"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="sans-serif"
         android:textSize="35dp"
         android:layout_centerHorizontal="true"
         android:textStyle="bold" />

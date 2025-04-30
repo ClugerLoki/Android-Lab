@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFF">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/pawanamuktasana"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/pawanamuktasana_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:text="Pawanamuktasana\n\nThe Sanskrit word pawana means ‘air’ or ‘wind’ and mukta means ‘freedom’ or ‘release’. This is called as the ‘wind relieving posture’ as it assists in releasing trapped digestive gas from the stomach and intestines.\n\nLet us perform Pawanamuktasana by following steps as given below:\n\nStarting position:\nLie supine with legs together and hands kept by the sides of the body, palms resting on the floor.\n\n1. Inhaling, fold both the legs at the knee over the belly.\n2. Hold the knees with the interlocked arms and press them on the belly.\n3. While exhaling, raise the head and let the chin touch the knees.\n\nReleasing position:\n4. Bring the head down cautiously.\n5. Release the interlocked arms and bring them on the floor.\n6. Exhaling, unfold the legs back on the floor.\n7. Bring legs together, hands by the side of the body, palms placed on floor and relax.\n\nRemember the following points:\nDo’s:\n• It causes pressure and contraction at the lower abdomen, hence practise it carefully.\n• Knees should be together while pressing against the chest.\n\nDon’ts:\n• Don’t shake the body and avoid jerky movement.\n• Do not get disheartened in initial stage.\n• Do not bend the head if suffering from spondylitis.\n\nBenefits:\n• This asana helps to increase digestive power.\n• It helps to deal with constipation by stimulating the abdominal region.\n• It helps in releasing trapped gas from the stomach.\n• It helps to dissolve extra fat deposited in the abdominal region.\n\nLimitations:\n• Do not practise, if suffering from severe back pain or abdominal injuries." />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

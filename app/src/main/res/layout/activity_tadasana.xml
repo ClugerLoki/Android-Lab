@@ -1,62 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="#FFF"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFF">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-
-
-        >
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-
-            >
-
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
 
             <pl.droidsonroids.gif.GifImageView
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:src="@drawable/tadasana"
+                android:scaleType="centerCrop"/>
 
-                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tadasana (Palm Tree Posture)\n\nTada in Sanskrit means ‘Palm tree’. This is called Tadasana because in it the body imitates a ‘Palm tree’. This tree is known for its height and also for being vertically straight. Hence, it has been named tadasana.\n\nStarting position: Stand erect, legs together, hands by the side of the thighs. Keep the back straight and gaze in front.\n\n1. Stretch the arms upward, over the head and parallel with each other, with the palms facing each other.\n\n2. Slowly raise the heels and stand on toes. Raise heels as much as you can. Stretch body up as much as possible. Stay for a few seconds in this final position.\n\n3. While returning to the original position, bring the heels on the floor first.\n\n4. Slowly bring down the hands by the side of the thighs and relax.\n\nBenefits:\n• It gives vertical stretch to whole body muscles.\n• It strengthens thighs, knees and ankles.\n• It helps in improving height of growing children.\n• It helps to remove laziness and lethargy.\n\nLimitations:\n• Those having complaints of reeling sensation should not practise it.\n• Avoid performing this asana if knee joints and ankle joints are having pain and stiffness."
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:paddingTop="8dp"/>
         </LinearLayout>
-
-        <Button
-            android:layout_marginTop="35dp"
-            android:id="@+id/time"
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            android:layout_marginLeft="105dp"
-            android:text="01:00"
-            android:textSize="28sp"
-            android:padding="15dp"
-            android:background="@drawable/button_bg_round"
-            />
-
-        <Button
-            android:id="@+id/startbutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/button_bg"
-            android:text="Start"
-            android:textColor="@android:color/white"
-            android:textSize="28sp"
-            android:layout_marginLeft="08dp"
-            android:textStyle="bold"
-            />
-
-
-
-    </LinearLayout>
-
+    </ScrollView>
 </RelativeLayout>

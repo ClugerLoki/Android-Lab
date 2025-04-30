@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFF">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/suryanamaskar"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Surya Namaskar (Sun Salutation) is a sequence of 12 powerful yoga poses. It is a great full-body workout that improves flexibility, builds strength, and boosts overall health. Here’s a breakdown of the 12 steps and their benefits:\n\n---\n\n12 Steps of Surya Namaskar:\n\n1. Pranamasana (Prayer Pose)\nStand straight, palms joined in front of the chest.\nBenefit: Promotes calmness and focus.\n\n2. Hastauttanasana (Raised Arms Pose)\nInhale, stretch arms up and arch back slightly.\nBenefit: Improves digestion, stretches chest and abdomen.\n\n3. Hasta Padasana (Hand to Foot Pose)\nExhale, bend forward, and touch toes.\nBenefit: Increases flexibility of spine and hamstrings.\n\n4. Ashwa Sanchalanasana (Equestrian Pose)\nInhale, take right leg back, look up.\nBenefit: Strengthens legs and spine, improves balance.\n\n5. Dandasana (Stick Pose)\nExhale, bring left leg back, body in straight line.\nBenefit: Strengthens arms, shoulders, and core.\n\n6. Ashtanga Namaskara (Salute with Eight Parts)\nLower knees, chest, and chin to floor.\nBenefit: Strengthens chest, arms, and back muscles.\n\n7. Bhujangasana (Cobra Pose)\nInhale, lift chest, keep elbows bent.\nBenefit: Opens chest, strengthens spine.\n\n8. Adho Mukha Svanasana (Downward Dog)\nExhale, lift hips, form an inverted V.\nBenefit: Energizes the body, improves blood flow to the brain.\n\n9. Ashwa Sanchalanasana (Repeat with Left Leg)\nInhale, bring left foot forward.\nSame benefits as step 4.\n\n10. Hasta Padasana (Repeat)\nExhale, bring right foot forward, touch toes.\nSame benefits as step 3.\n\n11. Hastauttanasana (Repeat)\nInhale, stretch arms up and back.\nSame benefits as step 2.\n\n12. Pranamasana (Repeat)\nExhale, return to the prayer position.\nSame benefits as step 1.\n\n---\n\nBenefits of Surya Namaskar:\n\nPhysical Benefits:\n• Improves flexibility and muscle tone\n• Boosts metabolism and aids weight loss\n• Enhances posture and balance\n• Stimulates the cardiovascular system\n• Improves digestion and detoxifies organs\n\nMental  Emotional Benefits:\n• Reduces stress and anxiety\n• Enhances focus and concentration\n• Promotes emotional stability\n\nSpiritual Benefits:\n• Balances energy levels\n• Encourages mindfulness and inner peace"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:paddingTop="8dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

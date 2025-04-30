@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "42209994117",
+    "project_id": "bitfit-a93e3",
+    "storage_bucket": "bitfit-a93e3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42209994117:android:9e1cbff1a3073ac1c6d0ec",
+        "android_client_info": {
+          "package_name": "com.example.fitbit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrXHG434QS8BzA5qFcsvdnfJU2mvjb-uw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
